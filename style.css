@@ -9,8 +9,6 @@
   color: white;
 }
 main {
-  height: 100vh;
-  overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("blog1.jpg");
   background-position: center;
   background-size: cover;
@@ -127,6 +125,7 @@ main {
   }
   main {
     padding: 2rem;
+    overflow: scroll;
   }
   .slakeContainer {
     width: 100%;
@@ -134,28 +133,30 @@ main {
   }
   .topContainer .row {
     flex-direction: column;
-    position: relative;
     border-left: 2px dashed #0F0;
     border-right: 2px dashed #0F0;
   }
   .textContainer {
     width: 100%;
     margin: 0;
-    position: absolute;
-    bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: centr;
     align-items: center;
   }
   .myInfo, .goalContainer {
     background-color: rgba(0, 0, 0, 0.3);
     text-align: left;
-    width: 58%;
+    width: 95%;
     padding: 1rem;
+    margin-top: 1.5rem;
   }
 
   .myInfo:hover, .goalContainer:hover{
     border: 2px dashed #0f0;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  .bottomContainer {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
